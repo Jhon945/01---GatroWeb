@@ -1,0 +1,31 @@
+
+
+@import "tailwindcss";
+
+:root {
+    --color-background: #F2E8D5;
+    --color-primary: #722F32;
+    --color-secondary: #C77B43;
+    --color-text-white: #FFFFFF;
+    --color-text-carbon: #1E1E1E;
+    --color-footer: #292622;
+    --color-section: #582326;
+}
+
+* {
+    background-color: var(--color-background);
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
