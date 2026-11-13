@@ -1,0 +1,57 @@
+---
+import Buttons from "../ui/Buttons.astro";
+---
+<div class="">
+    <div class="cont-hero flex flex-col items-center justify-center">
+            <h1 class="title">Deliciosa <span style="color:var(--color-primary)">comida</span> hecha <span style="color:var(--color-primary)">con</span> pasion</h1>
+            <h3 class="subtitle">Experiencias con ingredientes frescos y buen sabor - Un lugar como tu hogar</h3>
+            <div class="cont-buttons flex justify-center">
+                <Buttons variant="primary" type="button" text="menu"/>
+                <Buttons variant="secondary" type="button" text="menu"/>
+            </div>
+    </div>
+    <div class="cont-img flex justify-center">
+        <img src="/images/pizza1.png" alt="">
+    </div>
+</div>
+
+<style>
+    .cont-titles {
+        width: 50%;
+    }
+
+    .title {
+        font-size: 64px;
+        width: 50%;
+        color: var(--color-secondary);
+        margin: 10px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        width:30%;
+        color: var(--color-subtitle);
+        margin: 10px;
+    }
+
+    .cont-hero {
+        text-align: center;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .cont-buttons {
+        width: 100%;
+        margin: 15px;
+    }
+
+    .cont-img {
+        margin: 20px 0px 30px 0px;
+    }
+
+    img {
+        margin: 20px;
+        width: 75%;
+    }
+    
+</style>
