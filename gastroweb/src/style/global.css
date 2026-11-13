@@ -1,6 +1,6 @@
 
-
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
     --color-background: #F2E8D5;
@@ -13,7 +13,7 @@
     --color-subtitle: #676767;
 }
 
-* {
+body {
     background-color: var(--color-background);
 }
 

@@ -7,15 +7,12 @@
             <a href="/menu" class="route m-8">Menu</a>
         </div>
     </nav>
+    <div class="divider divider-custom"/>
 </div>
 
 <style>
     *{
         color: var(--color-primary);
-    }
-
-    span {
-        border-bottom:  solid var(--color-primary) 2px;
     }
 
     .title {
@@ -26,7 +23,16 @@
         font-size: 20px;
     }
 
-    #cont {
-        border-bottom:  solid var(--color-primary) 3px;
+    .divider-custom::before,
+    .divider-custom::after {
+        background-color: var(--color-primary);
+        height: 2.5px;
     }
+
+    .divider-custom {
+        width: 95%;
+        margin-inline: auto;
+    }
+
+
 </style>

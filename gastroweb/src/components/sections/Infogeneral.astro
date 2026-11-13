@@ -1,11 +1,98 @@
 
 <div class="cont-general">
     <div class="title">
+        <div class="divider divider-custom">Nuestra Historia</div>
     </div>
+     <div class="cont-box grid grid-cols-2 gap-4">
 
-    <div class="grid grid-flow-col grids-row-3 gap-4">
-        <div class="row-span-3" style="background-color: aqua;">01</div>
-        <div class="col-span-1" style="background-color: brown;">02</div>
-        <div class="col-span-1 row-span-2" style="background-color: blueviolet;">03</div>
+        <div class="cont-text cont-1">
+            <img src="/images/pizzero1.jpg" class="w-full h-auto block">
+            <div class="m-10">
+                <h3 id="title">Titulo</h3>
+                <br>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore id est, blanditiis similique numquam mollitia quod nemo, eveniet hic sint consequuntur harum in minima tenetur laudantium quo nesciunt omnis repudiandae.</p>
+            </div>
+        </div>
+
+        <div class="cont-right grid grid-rows-2 gap-4">
+            <div class="cont-text cont-2">
+                <div class="m-6">
+                    <h3>Mision</h3>
+                    <br>
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates accusantium delectus laboriosam velit dolor, corrupti enim, deserunt, maxime cum est pariatur inventore ducimus voluptas! Explicabo omnis suscipit quisquam officia consequatur?
+                    </p>
+                </div>
+            </div>
+            <div class="cont-text cont-3">
+                <div class="m-6">
+                    <h3>Vision</h3>
+                    <br>
+                    <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat nostrum perspiciatis optio excepturi praesentium quidem commodi. Sequi facere, recusandae neque nostrum ab praesentium atque porro, doloremque excepturi veniam rerum omnis.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<style>
+
+    .cont-general {
+        margin: 0px 0px 50px 0px;
+    }
+    .divider-custom::before,
+    .divider-custom::after {
+        background-color: var(--color-primary);
+        height: 2.5px;
+    }
+
+    .divider-custom {
+        width: 95%;
+        margin-inline: auto;
+        font-size: 24px;
+        color: var(--color-primary);
+    }
+
+    #title {
+        color: var(--color-primary);
+        font-size: 24px;
+    }
+
+    .cont-box {
+        margin-top: 50px;
+        width: 95%;
+        margin-inline: auto;
+        grid-auto-rows: minmax(120px, auto);
+    }
+
+    .cont-text {
+        color: black;
+        min-width: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .cont-1 {
+        background-color: var(--color-text-white);
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .cont-2 {
+        background-color: var(--color-secondary);
+        color: var(--color-text-white);
+    }
+
+    .cont-3 {
+        background-color: var(--color-primary);
+        color: #F3BD95;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+</style>
